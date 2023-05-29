@@ -1,0 +1,56 @@
+header{
+    background-color: #CCCCCC;
+    padding-left: 30px;
+    margin: 0%;
+    height: 100px;
+}
+
+#TituloInformacion{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    background-color: #CCCCCC;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+#banner{
+    width: 100%;
+}
+
+em strong{
+    color: red;
+}
+
+#TituloDiferenciales{
+    text-align: center;
+}
+
+.items{
+    font-style: italic;
+}
+
+.diferenciales{
+    background-color: white;
+}
+
+.descripcion{
+    background-color:#CCCCCC;
+    padding: 20px;
+}
+
+ul{
+    display: inline-block;  /*Para que cada item de la lista solo ocupe el espacio de su contenido y no todo el ancho*/
+    vertical-align: top;  /*Para que se alinee con la parte superior*/
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagenDiferenciales{
+    width: 50%;
+    padding: 30px;
+}

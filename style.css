@@ -1,0 +1,341 @@
+/*padre > hijo*/
+/*hermano + hermano*/
+/*elemento1 ~ elementos a aplicar estilo despues de elemento1*/
+
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+#body{
+    font-family: 'Oswald', sans-serif;
+}
+
+header{
+    background-color: #CCCCCC;
+    padding: 20px 0px;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /*Con esta instruccion incluimos los valores del padding dentro de los limites o porcentajes de la margen (margin)*/
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.productos li:hover{
+    border-color: #006CBB;
+}
+
+.productos li:active{
+    border-color: #032F64;
+}
+
+.productos h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0px;    
+}
+
+.caja{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*Los valores se refieren a las margenes arriba, abajo, izquierda, derecha*/}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+
+#head1:hover{
+    color: #006CBB;
+    text-decoration: underline;
+}
+
+#head2:hover{
+    color: #006CBB;
+    text-decoration: underline;
+}
+
+#head3:hover{
+    color: #006CBB;
+    text-decoration: underline;
+}
+
+
+.productoDescripcion{
+    font-size: 18px;
+}
+
+.productoPrecio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(Imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 2023;
+}
+
+/*Styles contact page*/
+
+form{
+    margin: 40px 0; /*Los valores se refieren a las margenes arriba y abajo, y a los lados.*/
+}
+
+form label, form legend{
+    display: block; /*Block es para icupar solo el espacio del contenido del componente mientras que inline ocupa todo el ancho de la pantalla*/
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #006CBB;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: #032F64;
+    transform: scale(1.05);
+}
+
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background-color: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Pagina index*/
+
+
+.banner{
+    width: 100%;
+}
+
+.TituloInformacion{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 20px;
+    clear: left;
+}
+
+.descripcion{
+    background-color: #FFFFFF;
+    width: 940px; /*Comunmente se utiliza para centrar componentes en la pagina (940px son la cantidad de pixeles de un  monitor padron)*/
+    margin: 0 auto;
+}
+
+.descripcion p{
+    margin: 0 0 1em;
+}
+
+.descripcion strong{
+    font-weight: bold;
+}
+
+.descripcion em{
+    font-style: italic;
+
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background-color: #006CBB;
+    text-align: center;
+
+}
+
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+.imagenDiferenciales{
+    width: 60%;
+    box-shadow: 10px 10px 10px #032F64; /*Los primeros dos parametros son donde esta la sombra y el tercero es la opacidad de la sombra que tambien es en pixeles*/
+
+}
+
+.imagenDiferenciales:hover{
+    opacity: 50%;
+    transition: 500ms;
+}
+
+.utensilios{
+    float: left;
+    width: 120px;
+    margin: 0 20px 0 20px;
+}
+
+
+
+.mapa p{
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.mapa h3{
+    margin: 10px 0 10px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    text-align: center;
+    margin: auto;
+    background: linear-gradient(#FFFFFF, #006CBB);
+    
+}
+
+.cuadroMapa{
+    box-shadow: 10px 10px 10px 2px #032F64; /*Los primeros dos parametros son donde esta la sombra, el tercero es la opacidad de la sombra que tambien es en pixeles, y el cuarto es hasta donde se quiere expandir la sombra*/
+    /*Existe una herramienta online para crear sombras a elementos en https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator*/
+}
+
+.contenidoDiferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.listaDiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 3;
+}
+
+.items::before{
+    content: "✓";
+}
+
+.items::first-letter{
+    font-weight: bold;
+}
+
+.items:hover{
+    font-weight: bold;
+}
+
+.video{
+    padding: 20px;    
+    text-align: center;
+    margin: auto;
+    background-color: #006CBB;
+    
+
+}
+
+
+/*
+.TituloInformacion::first-letter{ /*Le asigna un estilo a la primera letra de este elemento*/
+/*    font-weight: bold;
+}
+
+.TituloInformacion::after{
+    content: "~";
+}
+
+.TituloInformacion::before{
+    content: "~";
+}*/
+
+
+@media screen and (max-width:480px){ /*Si el navegador es de hasta 480px de ancho cambia responsivamente la pagina*/
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: relative;
+        text-align: center;
+        top: -10px;
+    }
+    
+    .caja, .descripcion, .cuadroMapa, .contenidoDiferenciales, .video{
+        width: auto;
+    }
+
+    .listaDiferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+}
+

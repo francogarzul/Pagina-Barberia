@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--Para que el navegador adapte la pagina a la pantalla (Tambien se debe editar en el CSS)-->
+
+
+        <title>Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+         <!--Fuentes de pagina-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+ 
+    </head>
+    <body>
+        <header id="header">
+            <div class="caja">
+                <h1><img src="Imagenes/logo.png" alt="Logo barberia"></h1>
+                <nav>
+                    <ul>
+                        <li> <a id="head1" href="index.html">Home</a> </li>  <!--Referencia a la pagina de informacion de la barberia-->
+                        <li> <a id="head2" href="productos.html">Products</a></li>
+                        <li> <a id="head3" href="contacto.html">Contacto</a> </li>
+                    </ul>   
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                
+                <label for="nombreyapellido">Nombre y apellido</label>
+                <input type="text" id="nombreyapellido" class="input-padron" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padron" required  placeholder="email@correo.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX)-XXX-XXX-XX-XX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+
+                    <label for="radio-wpp"><input type="radio" name="contacto" value="whatsapp" id="radio-wpp">Whatsapp</label>
+                    
+
+                    <!--El 'name="contacto"' sirve para declarar que todos los elementos con este nombre pertenecen al mismo grupo y que no se pueda seleccionar todo al tiempo-->
+
+                </fieldset> <!--Le indica al navegador que los elementos dentro de esta etiqueta estan relacionados entre si-->
+                <fieldset>
+                    <legend>¿En que horario desea su cita?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox">¿Le gustaria recibir novedades?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+                
+            </form>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+       
+
+        <footer>
+            <img src="Imagenes/logo-blanco.png" alt="Logo barberia">
+            <p class="copyright">&copy Copyright Barberia FGZ - 2023</p>
+
+        </footer>
+
+        
+    
+    </body>
+</html>
